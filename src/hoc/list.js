@@ -2,10 +2,6 @@ import { Avatar, List, Button } from "antd";
 import React from "react";
 
 export default class AppList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   onButtonClicked(itemKey, title, year, avatar) {
     if (this.props.onButtonClicked) {
       this.props.onButtonClicked(itemKey, title, year, avatar);

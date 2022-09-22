@@ -18,7 +18,7 @@ export function fetchMovieNames(searchString = "") {
       const { Response } = response;
       if (Response === "True") {
         return {
-          movies: response["Search"].filter(item => item["Type"] == "movie"),
+          movies: response["Search"].filter(item => item["Type"] === "movie"),
           message: "",
         };
       } else {
