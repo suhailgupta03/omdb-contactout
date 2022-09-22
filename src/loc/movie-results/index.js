@@ -24,7 +24,7 @@ export default class MovieResults extends React.Component {
   
   renderTitle(searchString) {
     if (searchString) {
-      return <span>Search results for "{this.props.searchString}"</span>;
+      return <span className="cy-search-results-title">Search results for "{this.props.searchString}"</span>;
     }
   }
 

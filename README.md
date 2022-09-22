@@ -8,7 +8,7 @@ Used React JS to build the application
 I have deployed the application here at https://enchanting-unicorn-789d07.netlify.app/
 ### Video Links
 - Application Walkthrough : https://www.loom.com/share/6785b7ad4ae1440aba6275e78376dec4
-- Code Walkthrough : https://www.loom.com/share/3b0c3dab19384f88b88a7ae6b39ab8a7
+- Code Walkthrough : https://loom.com/share/1054dcb4313a4aa1874824e244143b2f
 
 ### Running The Application On Local
 - Unzip the file _omdb-contactout.zip_
@@ -16,3 +16,8 @@ I have deployed the application here at https://enchanting-unicorn-789d07.netlif
 - Run `npm ci` to install all the dependencies
 - Run `npm start` to start the local development server
 - If you want to host this on to a HTTP server, run `npm build` and then put the contents inside the `build` folder into the root directory of the HTTP server.
+
+### Running all test cases
+`npx cypress run` 
+
+Use the command `npm install --save-dev cypress` to install cypress which is also present as a dev-dependency inside `package.json`

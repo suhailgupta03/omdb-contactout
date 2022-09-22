@@ -25,6 +25,7 @@ export default class AppList extends React.Component {
                   disabled={this.props.disabledButtons.includes(
                     item[this.props.uniqueKey]
                   )}
+                  className={"cy-list-button"}
                   onClick={this.onButtonClicked.bind(
                     this,
                     item[this.props.uniqueKey],
@@ -40,8 +41,8 @@ export default class AppList extends React.Component {
           >
             <List.Item.Meta
               avatar={<Avatar src={item.Poster} />}
-              title={item.Title}
-              description={item.Year}
+              title={<span className="cy-movie-title">{item.Title}</span>}
+              description={<span className="cy-movie-year">{item.Year}</span>}
             />
           </List.Item>
         )}

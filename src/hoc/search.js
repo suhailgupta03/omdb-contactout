@@ -11,6 +11,7 @@ export default class AppSearchBar extends React.Component {
     return (
       <Space direction="vertical">
         <Search
+            className="cy-search-field"
             placeholder="Search movies"
             style={{ width: this.props.width || 400 }}
             onSearch={this.onSearch.bind(this)}

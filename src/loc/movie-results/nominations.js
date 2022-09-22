@@ -59,7 +59,7 @@ export default class Nominations extends React.Component {
   render() {
     const nominations = this.state.nominations;
     return nominations.length > 0 ? (
-      <Card title="Nominations" className={this.props.className}>
+      <Card title="Nominations" className={`${this.props.className} cy-nominations-card`}>
         <AppList
           data={nominations}
           buttonName="Remove"
@@ -70,7 +70,7 @@ export default class Nominations extends React.Component {
       </Card>
     ) : (
       <Card title="" className={this.props.className}>
-        No nominations made yet!
+        <span className="cy-no-nominations">No nominations made yet!</span>
       </Card>
     );
   }
